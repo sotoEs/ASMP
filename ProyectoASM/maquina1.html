@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesm1.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="scssm2/styles.css">
+    
+    <title>SERO-FUGE 2001</title>
+  </head>
+  <body>
+    <div class="imagenes-container">
+      <img
+        id="product-image"
+        src="https://uploads.codesandbox.io/uploads/user/9a90594a-1e02-4d3f-b0ab-c3806fd3118d/G-ih-Maquina7.png"
+        alt="Producto"
+      />
+    </div>
+    <div class="options-container">
+      <button
+        class="option"
+        onclick="changeImage('./img/Maquina7.png')"
+      >
+        Opción 1
+      </button>
+      <button
+        class="option"
+        onclick="changeImage('./img/Maquina1.png')"
+      >
+        Opción 2
+      </button>
+      <button
+        class="option"
+        onclick="changeImage('./img/Maquina2.webp')"
+      >
+      Opción 3
+      </div>
+
+      <section class="section">
+        <div class="title">
+            <h2>CENTRIFUGA MULTITUBOS SERO-FUGE 2001</h2>
+            <p>La máquina centrifuga multitubos Sero-Fuge 2001 es un equipo de laboratorio utilizado para separar componentes de una muestra líquida mediante la aplicación de fuerza centrífuga. Puede contener múltiples tubos o recipientes en su rotor, permitiendo procesar varias muestras al mismo tiempo. Estas máquinas son esenciales en campos como la biología, la química y la investigación médica, ya que facilitan la separación de componentes como células, proteínas o partículas en suspensión con alta velocidad y precisión.</p>
+        </div>
+        <div class="video">
+            <video src="videoSerofuge.mp4" width="600px" height="400px" controls></video>
+        </div>
+      </section>
+      <section class="modelo">
+        <model-viewer id="modelViewer" src="Biomedicafin.glb" camera-controls
+        camera-orbit="65deg 55deg 2.5m" auto-rotate>
+
+        </model-viewer>
+      </section>
+      
+    <!-- Import the component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+      
+  </body>
+</html>

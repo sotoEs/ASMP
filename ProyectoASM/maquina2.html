@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesm1.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="scssm2/styles.css">
+    <link rel="stylesheet" href="scssm3/styles.css">
+    <title>MEMMERT BE200</title>
+  </head>
+  <body>
+    <div class="imagenes-container">
+      <img
+        id="product-image"
+        src="/imgs/1.jpg"
+        alt="Producto"
+      />
+    </div>
+    <div class="options-container">
+      <button
+        class="option"
+        onclick="changeImage('./imgs/1.jpg')"
+      >
+        Opción 1
+      </button>
+      <button
+        class="option"
+        onclick="changeImage('./imgs/2.jpg')"
+      >
+        Opción 2
+      </button>
+      <button
+        class="option"
+        onclick="changeImage('./imgs/3.jpg')"
+      >
+      Opción 3
+      </div>
+
+      <section class="section">
+        <div class="title">
+            <h2>ESTERILIZADOR SM300</h2>
+            <p>El Esterilizador SM300 Memmert es un dispositivo de laboratorio diseñado para esterilizar y desinfectar materiales y equipos utilizando calor seco. Utiliza un proceso de esterilización mediante convección que se basa en el principio de circulación de aire caliente uniforme a temperaturas controladas. Este esterilizador es conocido por su precisión en el control de la temperatura y el tiempo, lo que garantiza una esterilización eficiente y confiable. Se utiliza en una variedad de aplicaciones en laboratorios, hospitales y entornos de investigación para desinfectar herramientas, vidrio de laboratorio, medios de cultivo y otros materiales sensibles al calor. Además, ofrece una interfaz de usuario fácil de usar para programar y controlar los ciclos de esterilización, lo que lo convierte en una herramienta esencial en la esterilización de equipos de laboratorio..</p>
+        </div>
+    </section>
+    <div class="video">
+        <iframe width="550" height="400" src="https://www.youtube.com/embed/KuRXeZCNh7o?si=VAg-LzuiKK1nR5gF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <section class="modelo">
+        <model-viewer id="modelViewer" src="asm.glb" camera-controls
+        camera-orbit="65deg 55deg 2.5m" auto-rotate>
+
+        </model-viewer>
+      </section>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  </body>
+</html>

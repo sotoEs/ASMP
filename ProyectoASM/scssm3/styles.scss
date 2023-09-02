@@ -1,0 +1,112 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url(../img/20775473_tp244-bg1-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 30px auto;
+    
+
+    .imagenes-container {
+        width: 50%;
+        height: 70%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        
+
+        #product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+    }
+    .options-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .option {
+            padding: 10px 20px;
+            margin: 0 20px;
+            background-color: #333;
+            border-radius: 5px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.5s;
+
+            &:hover{
+                background: #00b4d8;
+                transition: 0.5s;
+
+            }
+          }
+
+    }
+    .section{
+        margin-top: 0px;
+        display: flex;
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        .title{
+            max-width: 800px;
+            display: flex;      
+            flex-direction: column;
+            align-items: center; 
+            padding: 10px;  
+
+            h2{
+                color: #000;
+                padding: 10px;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        
+    }
+
+    .modelo{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        background: black;
+        model-viewer{
+            width: 600px;
+            height: 500px;
+        }
+    }
+
+   
+}
